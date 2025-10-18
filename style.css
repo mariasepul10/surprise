@@ -1,0 +1,83 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("escena.png") no-repeat center/cover; 
+  font-family: "DePixel", cursive;
+}
+
+/* Elementos interactivos */
+.nico, .pc, .gato, .bebida {
+  position: absolute;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.nico:hover,
+.pc:hover,
+.gato:hover,
+.bebida:hover {
+  transform: scale(1.1);
+}
+
+.nico {
+  left: 32.5%; 
+  bottom: 10.5%;
+  width: 276px; 
+  height: 464px;
+  background: url("nico.png") no-repeat center/contain;
+}
+
+.pc {
+  width: 260px; height: 170px;
+  left: 52.5%; 
+  bottom: 38.85%;
+  background: url("pc.png") no-repeat center/contain;
+}
+
+.gato {
+  width: 180px; height: 110px;
+  left: 54%; 
+  bottom: 10.5%;;
+  background: url("gato.png") no-repeat center/contain;
+}
+
+.bebida {
+  width: 78px; height: 133px;
+  left: 20%; 
+  bottom: 38.85%;
+  background: url("bebida.png") no-repeat center/contain;;
+}
+
+
+@font-face {
+  font-family: "DePixel";
+  src: url("fonts/depixelhalbfett.woff2") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Globos de mensajes */
+.message {
+  position: absolute;
+  top: 100px;
+  right: 18%;
+  background: #f4f0f0;;
+  border-radius: 18px;
+  padding:18px 28px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.327); 
+  max-width: 60%;
+  font-family: "DePixel", cursive;
+  color: #080808;
+  font-size: 17px;
+  text-align: center;
+  display: none;
+  border: none
+}
+
+
+
